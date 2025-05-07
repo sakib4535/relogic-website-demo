@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogic Solutions - AI Native Studio Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Header with Navigation -->
+        <header class="header">
+            <div class="container">
+                <!-- Logo Section -->
+                <div class="logo-container">
+                    <img src="images/image_1.jpg" alt="Relogic Solutions Logo" class="logo">
+                    <span class="logo-text">Relogic Solutions</span>
+                </div>
+        
+                <!-- Navigation Section -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <!-- Regular Navigation Links -->
+                        <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#solutions" class="nav-link">Our Solutions <i class="fas fa-chevron-down"></i></a>
+                            <!-- Dropdown Menu -->
+                            <div class="dropdown-menu">
+                                <a href="agentic-ai.html" class="dropdown-item">Agentic AI Architecture</a> <!-- Link to agentic-ai.html -->
+                                <a href="#healthtech" class="dropdown-item">NextGen HealthTech</a>
+                                <a href="#risk-intel" class="dropdown-item">Risk-First Intelligence</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#consulting" class="nav-link">Consulting</a></li>
+                        <li class="nav-item"><a href="#what-we-do" class="nav-link">What We Do</a></li>
+                    </ul>
+                </nav>
+        
+                <!-- Mobile Menu Button -->
+                <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        
+
+        <!-- Hero Section with Moving Background -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">AI Solutions: Reasoning, Logic, Real-World Impact. Driving Smarter Decisions with AI & Logic</h1>
+               
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="hero-slideshow">
+                <div class="slide active" style="background-image: url('images/hero-bg.jpg');"></div> 
+                <div class="slide" style="background-image: url('images/hero-bg2.jpg');"></div>
+                <div class="slide" style="background-image: url('images/hero-bg3.jpg');"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Relogic Solutions</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Relogic Solutions, headquartered in Dhaka, Bangladesh, is a pioneering AI consultancy dedicated to transforming industries through reasoning ("Re") and logic-driven intelligence. As an AI-native innovation studio, we specialize in delivering bespoke AI, machine learning, and data analytics solutions, with a focus on Web 3.0, ethical AI, and human-centric design. Our mission is to empower businesses by turning data into actionable strategies that drive smarter decisions, optimize operations, and unlock scalable growth opportunities.</p>
+                        <p>Partner with Relogic Solutions to pioneer innovation, whether you’re a corporate seeking premium AI consulting, an SME looking for custom MVPs, or a public entity aiming for social impact through our AI Labs as a Service. </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/image_2.jpg" alt="About Relogic Solutions">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="section solutions-section">
+            <div class="container">
+                <h2 class="section-title">Our AI Solutions</h2>
+                <div class="solutions-grid">
+                    <div id="agentic-ai" class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="solution-title">Agentic AI Architecture</h3>
+                        <p class="solution-desc">For Real-Estates and Retails. AI-driven segmentation, dynamic pricing, and real-time recommendation engines.</p>
+                        <ul class="solution-features">
+                            <li>Dynamic Pricing Algorithms</li>
+                            <li>Hyper-Personalization Engines</li>
+                            <li>10-15% revenue growth</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="healthtech" class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h3 class="solution-title">NextGen HealthTech</h3>
+                        <p class="solution-desc">For Healthcare (Hospitals, Diagnostics). 40% faster triage times and reduced diagnostic errors.</p>
+                        <ul class="solution-features">
+                            <li>AI-powered Diagnostic Assistants</li>
+                            <li>Patient Flow Optimization Tools</li>
+                            <li>Improved care delivery</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="risk-intel" class="solution-card">
+                        <div class="solution-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="solution-title">Risk-First Intelligence</h3>
+                        <p class="solution-desc">For Financial Institutes/Banks. 25% more loan approvals and 90% fraud detection accuracy.</p>
+                        <ul class="solution-features">
+                            <li>Predictive Maintenance</li>
+                            <li>Computer Vision-based Quality Control</li>
+                            <li>Regulatory compliance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission Section -->
+        <section class="section vision-section">
+            <div class="container">
+                <div class="vision-mission-grid">
+                    <div class="vision-card">
+                        <h2 class="section-title">Our Vision</h2>
+                        <p>To become Bangladesh's first public-facing multi-sectoral AI utility platform, blending social impact with profit through human-in-the-loop AI for low-resource regions.</p>
+                    </div>
+                    <div class="mission-card">
+                        <h2 class="section-title">Our Mission</h2>
+                        <p>To deploy modular AI tools across agriculture, health, education, and retail with ethical, explainable, and responsible AI systems that deliver 10x returns within 6 months.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Higher Authority Section -->
+        <section class="section team-section">
+            <div class="container">
+                <h2 class="section-title">Higher Authority</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/team/hasnain.jpg" alt="Hasnain Imtiaz">
+                        <h3>Hasnain Imtiaz</h3>
+                        <p class="role">Co-founder</p>
+                        <p class="bio">AI/ML expert with focus on ethical AI and multi-sectoral applications.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team/robin.jpg" alt="Robin Jamal">
+                        <h3>Robin Jamal</h3>
+                        <p class="role">Co-founder</p>
+                        <p class="bio">Specializes in strategic implementation and agile AI sprints.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Staff Team Section -->
+        <section class="section team-section">
+            <div class="container">
+                <h2 class="section-title">Staff Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/team/ai-engineer.jpg" alt="AI Engineer">
+                        <h3>Sadia Rahman</h3>
+                        <p class="role">AI Engineer</p>
+                        <p class="bio">Experienced in deep learning and MLOps with a focus on NLP pipelines.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team/data-analyst.jpg" alt="Data Analyst">
+                        <h3>Tanvir Alam</h3>
+                        <p class="role">Data Analyst</p>
+                        <p class="bio">Expert in data visualization and storytelling using Python and Tableau.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team/uiux.jpg" alt="UI/UX Designer">
+                        <h3>Nazifa Hossain</h3>
+                        <p class="role">UI/UX Designer</p>
+                        <p class="bio">Designs intuitive user interfaces and smooth user experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- What We Do Section -->
+        <section id="what-we-do" class="section services-section">
+            <div class="container">
+                <h2 class="section-title">What We Offer</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Multi-Sectoral AI Utility Platforms</h3>
+                        <p>We build modular AI tools that seamlessly adapt across agriculture, healthcare, fintech, education, and retail.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Ethical and Human-Centric AI</h3>
+                        <p>Our systems embed ethical compliance (HIPAA, GDPR) and bias mitigation from inception.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Design-Integrated Intelligence</h3>
+                        <p>We merge machine learning with intuitive UX/UI design, crafting human-centered solutions.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Rapid Innovation via Agile AI Sprints</h3>
+                        <p>We deliver functional MVPs within 3-6 weeks through lean, agile AI sprints.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+                        <p><i class="fas fa-envelope"></i> info@relogicsolutions.com</p>
+                        <p><i class="fas fa-phone"></i> +880 XXXX XXXXXX</p>
+                    </div>
+                    <div class="contact-form">
+                        <form @submit.prevent="submitForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/agri-logic.jpg" alt="AgriLogic AI Thumbnail" class="project-img" />
+                        <h3 class="project-title">AgriLogic AI</h3>
+                        <p class="project-desc">AI-powered advisory tool for smallholder farmers using satellite data and crop cycle modeling. Increased yield prediction accuracy by 30%.</p>
+                        <ul class="project-features">
+                            <li>Crop Disease Detection</li>
+                            <li>Weather-Integrated Planning</li>
+                            <li>Bangla NLP Crop Advisory</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/medagent-zero.jpg" alt="MedAgent Zero Thumbnail" class="project-img" />
+                        <h3 class="project-title">MedAgent Zero</h3>
+                        <p class="project-desc">A simulacrum hospital using agent-based LLMs for triage, diagnosis, and care coordination—trained without labeled data.</p>
+                        <ul class="project-features">
+                            <li>LLM-powered Medical Agents</li>
+                            <li>Zero-shot Diagnosis Engine</li>
+                            <li>Reduced Error Margin by 35%</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/finvision.jpg" alt="FinVision Thumbnail" class="project-img" />
+                        <h3 class="project-title">FinVision</h3>
+                        <p class="project-desc">A real-time risk analytics dashboard for mid-size banks using predictive AI and anomaly detection to prevent fraud.</p>
+                        <ul class="project-features">
+                            <li>Fraud Detection (90% accuracy)</li>
+                            <li>Risk Scoring Engine</li>
+                            <li>Loan Approval Automation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpeg" alt="Property.ai Logo">
+                        <span>Property.ai</span>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#solutions">Solutions</a></li>
+                            <li><a href="#consulting">Consulting</a></li>
+                            <li><a href="#what-we-do">What We Do</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Property.ai by Relogic Solutions. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/vue-app.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+

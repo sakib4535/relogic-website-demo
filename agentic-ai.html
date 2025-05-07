@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Architecture - Relogic Solutions</title>
+    <link rel="stylesheet" href="css/agentic-ai.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Agentic AI Architecture</h1>
+        </div>
+    </header>
+
+    <section id="agentic-ai" class="product-section">
+        <div class="container">
+            <!-- Product Description Section -->
+            <div class="product-description">
+                <h2>Transforming Industries with Agentic AI</h2>
+                <p class="description-text">
+                    Agentic AI is an advanced AI-driven architecture designed to optimize decision-making processes across industries. By using cutting-edge agent-based technology, this system simulates and automates complex decision-making tasks, driving efficiency and innovation. The architecture leverages deep learning models for real-time data processing and predictive insights, allowing businesses to streamline operations and reduce errors.
+                </p>
+            </div>
+
+            <body>
+                <header>
+                    <div class="header-container">
+                        <h1>Agentic AI Architecture</h1>
+                    </div>
+                </header>
+            
+                <section id="agentic-ai" class="product-section">
+                    <div class="container">
+                        <!-- Product Description Section -->
+                        <div class="product-description">
+                            <h2>Transforming Industries with Agentic AI</h2>
+                            <p class="description-text">
+                                Agentic AI is an advanced AI-driven architecture designed to optimize decision-making processes across industries. By using cutting-edge agent-based technology, this system simulates and automates complex decision-making tasks, driving efficiency and innovation. The architecture leverages deep learning models for real-time data processing and predictive insights, allowing businesses to streamline operations and reduce errors.
+                            </p>
+                        </div>
+            
+                        <!-- Project Plot Showcase Section -->
+                        <div class="plot-showcase">
+                            <div class="plot-box">
+                                <h3>Project Plot 1</h3>
+                                <div class="plot-content">
+                                    <!-- You can embed images or plots here -->
+                                    <p>Plot will appear here</p>
+                                </div>
+                            </div>
+                            <div class="plot-box">
+                                <h3>Project Plot 2</h3>
+                                <div class="plot-content">
+                                    <!-- You can embed images or plots here -->
+                                    <p>Plot will appear here</p>
+                                </div>
+                            </div>
+                            <div class="plot-box">
+                                <h3>Project Plot 3</h3>
+                                <div class="plot-content">
+                                    <!-- You can embed images or plots here -->
+                                    <p>Plot will appear here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+    <script>
+        function previewImage(imageNumber) {
+            const fileInput = document.getElementById(`image${imageNumber}`);
+            const previewDiv = document.getElementById(`image${imageNumber}-preview`);
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                previewDiv.innerHTML = `<img src="${e.target.result}" alt="Preview Image" class="preview-image">`;
+            };
+            
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                previewDiv.innerHTML = '<p>No image selected</p>';
+            }
+        }
+    </script>
+</body>
+</html>
