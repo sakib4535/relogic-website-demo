@@ -33,10 +33,16 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #d4ecf3;
+    background: linear-gradient(90deg, #d4ecf3, #4b9cd3);
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: gradientShift 5s ease-in-out infinite;
 }
+
 
 
 
@@ -66,14 +72,17 @@ body {
 
 /* styles.css */
 .logo-text {
-    font-family: 'Arial', sans-serif;
-    font-size: 28px;
-    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 900; /* Extra bold */
     margin-left: 10px;
-    /* Gradient text color from navy blue (#1e3a8a) to light blue (#60a5fa) */
     background: linear-gradient(to right, #031b5a, #257ae2);
     -webkit-background-clip: text;
     color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    letter-spacing: 1px; /* Slight spacing for elegance */
+    position: relative;
+    animation: gradientGlow 3s ease-in-out infinite; /* Subtle glowing animation */
 }
 
 .nav {
@@ -89,6 +98,9 @@ body {
 .nav-item {
     margin-left: 30px;
     position: relative;
+    font-style: var(--text-dark);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
 }
 
 .nav-link {
