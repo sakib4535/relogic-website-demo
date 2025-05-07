@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relogic Solutions - AI Native Studio Lab</title>
+    <title>Relogic Technologies - AI Native Studio Lab</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,8 +17,10 @@
             <div class="container">
                 <!-- Logo Section -->
                 <div class="logo-container">
-                    <img src="images/image_1.jpg" alt="Relogic Solutions Logo" class="logo">
-                    <span class="logo-text">Relogic Solutions</span>
+                    <img src="images/image_1.jpg" alt="Relogic Technologies Logo" class="logo">
+                    <span class="logo-text">Relogic Technologies</span>
+                    <!-- Apply gradient text color (navy blue to light blue) in CSS -->
+                    <!-- Example CSS: .logo-text { background: linear-gradient(to right, #1e3a8a, #60a5fa); -webkit-background-clip: text; color: transparent; } -->
                 </div>
         
                 <!-- Navigation Section -->
@@ -30,7 +32,7 @@
                             <a href="#solutions" class="nav-link">Our Solutions <i class="fas fa-chevron-down"></i></a>
                             <!-- Dropdown Menu -->
                             <div class="dropdown-menu">
-                                <a href="agentic-ai.html" class="dropdown-item">Agentic AI Architecture</a> <!-- Link to agentic-ai.html -->
+                                <a href="agentic-ai.html" class="dropdown-item">Agentic AI Architecture</a>
                                 <a href="#healthtech" class="dropdown-item">NextGen HealthTech</a>
                                 <a href="#risk-intel" class="dropdown-item">Risk-First Intelligence</a>
                             </div>
@@ -46,34 +48,69 @@
                 </div>
             </div>
         </header>
-        
 
         <!-- Hero Section with Moving Background -->
         <section class="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1 class="hero-title">AI Solutions: Reasoning, Logic, Real-World Impact. Driving Smarter Decisions with AI & Logic</h1>
-               
                 <a href="#contact" class="btn btn-primary">Get Started</a>
             </div>
             <div class="hero-slideshow">
-                <div class="slide active" style="background-image: url('images/hero-bg.jpg');"></div> 
+                <div class="slide active" style="background-image: url('images/hero-bg.jpg');"></div>
                 <div class="slide" style="background-image: url('images/hero-bg2.jpg');"></div>
                 <div class="slide" style="background-image: url('images/hero-bg3.jpg');"></div>
             </div>
         </section>
 
+        <!-- Partners Section with Scrolling Logos -->
+        <section class="section partners-section">
+            <div class="container">
+                <h2 class="section-title">Our Trusted Partners</h2>
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <img src="images/partners/faith.png" alt="Company 1 Logo" class="partner-logo">
+                        <img src="images/partners/uttara.jpeg" alt="Company 2 Logo" class="partner-logo">
+                        <img src="images/partners/creative.jpeg" alt="Company 3 Logo" class="partner-logo">
+                        <img src="images/partners/omdena.jpeg" alt="Company 4 Logo" class="partner-logo">
+                        <img src="images/partners/PUBG.png" alt="Company 5 Logo" class="partner-logo">
+                        <!-- Duplicate logos for seamless scrolling -->
+                        <img src="images/partners/binance.jpeg" alt="Company 1 Logo" class="partner-logo">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript for Scrolling Marquee -->
+        <script>
+            const marqueeContent = document.querySelector('.marquee-content');
+            let scrollAmount = 0;
+
+            function scrollMarquee() {
+                scrollAmount -= 1; // Adjust speed by changing this value
+                if (Math.abs(scrollAmount) >= marqueeContent.scrollWidth / 2) {
+                    scrollAmount = 0; // Reset to create a seamless loop
+                }
+                marqueeContent.style.transform = `translateX(${scrollAmount}px)`;
+                requestAnimationFrame(scrollMarquee);
+            }
+
+            // Start the marquee animation
+            scrollMarquee();
+        </script>
+
         <!-- About Section -->
         <section id="about" class="section about-section">
             <div class="container">
-                <h2 class="section-title">About Relogic Solutions</h2>
+                <h2 class="section-title">About Relogic Technologies</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Relogic Solutions, headquartered in Dhaka, Bangladesh, is a pioneering AI consultancy dedicated to transforming industries through reasoning ("Re") and logic-driven intelligence. As an AI-native innovation studio, we specialize in delivering bespoke AI, machine learning, and data analytics solutions, with a focus on Web 3.0, ethical AI, and human-centric design. Our mission is to empower businesses by turning data into actionable strategies that drive smarter decisions, optimize operations, and unlock scalable growth opportunities.</p>
-                        <p>Partner with Relogic Solutions to pioneer innovation, whether you’re a corporate seeking premium AI consulting, an SME looking for custom MVPs, or a public entity aiming for social impact through our AI Labs as a Service. </p>
+                        <p>Relogic Technologies, headquartered in Dhaka, Bangladesh, is a pioneering AI consultancy dedicated to transforming industries through reasoning ("Re") and logic-driven intelligence. As an AI-native innovation studio, we specialize in delivering bespoke AI, machine learning, and data analytics solutions, with a focus on Web 3.0, ethical AI, and human-centric design. Our mission is to empower businesses by turning data into actionable strategies that drive smarter decisions, optimize operations, and unlock scalable growth opportunities.</p>
+                        <p>Partner with Relogic Technologies to pioneer innovation, whether you’re a corporate seeking premium AI consulting, an SME looking for custom MVPs, or a public entity aiming for social impact through our AI Labs as a Service.</p>
                     </div>
                     <div class="about-image">
-                        <img src="images/image_2.jpg" alt="About Relogic Solutions">
+                        <img src="images/image_2.jpg" alt="About Relogic Technologies">
                     </div>
                 </div>
             </div>
@@ -169,14 +206,14 @@
                 <h2 class="section-title">Staff Team</h2>
                 <div class="team-grid">
                     <div class="team-member">
-                        <img src="images/team/ai-engineer.jpg" alt="AI Engineer">
-                        <h3>Sadia Rahman</h3>
+                        <img src="images/team/one.jpg" alt="AI Engineer">
+                        <h3>Sazzat Hossain </h3>
                         <p class="role">AI Engineer</p>
                         <p class="bio">Experienced in deep learning and MLOps with a focus on NLP pipelines.</p>
                     </div>
                     <div class="team-member">
-                        <img src="images/team/data-analyst.jpg" alt="Data Analyst">
-                        <h3>Tanvir Alam</h3>
+                        <img src="images/team/two.jpeg" alt="Data Analyst">
+                        <h3>Md. Azizul Hakim</h3>
                         <p class="role">Data Analyst</p>
                         <p class="bio">Expert in data visualization and storytelling using Python and Tableau.</p>
                     </div>
@@ -189,7 +226,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- What We Do Section -->
         <section id="what-we-do" class="section services-section">
@@ -224,7 +260,7 @@
                     <div class="contact-info">
                         <h3>Contact Information</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-                        <p><i class="fas fa-envelope"></i> info@relogicsolutions.com</p>
+                        <p><i class="fas fa-envelope"></i> info@relogictechnologies.com</p>
                         <p><i class="fas fa-phone"></i> +880 XXXX XXXXXX</p>
                     </div>
                     <div class="contact-form">
@@ -284,7 +320,6 @@
             </div>
         </section>
 
-
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
@@ -312,15 +347,22 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2025 Property.ai by Relogic Solutions. All rights reserved.</p>
+                    <p>© 2025 Property.ai by Relogic Technologies. All rights reserved.</p>
                 </div>
             </div>
         </footer>
     </div>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 
     <script src="js/vue-app.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
 </body>
 </html>
-
